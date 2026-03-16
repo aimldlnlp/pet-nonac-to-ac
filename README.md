@@ -122,3 +122,4 @@ Notes:
 - `reports/figures/*.png`
 
 The output directories above are local run artifacts. For research review or portfolio presentation, the primary source tree is `src/`, `configs/`, and the pipeline entry points at the repository root.
+# pet-nonac-to-ac
