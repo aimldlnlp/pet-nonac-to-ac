@@ -20,3 +20,11 @@ runs/
 
 !configs/*.yaml
 !requirements.txt
+!reports/
+reports/*
+!reports/gifs/
+reports/gifs/*
+!reports/gifs/test_005_*.gif
+!reports/videos/
+reports/videos/*
+!reports/videos/test_005_*.mp4

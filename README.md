@@ -120,20 +120,24 @@ Notes:
 - `reports/metrics_test.csv`
 - `reports/summary.json`
 - `reports/figures/*.png`
+- `reports/gifs/*.gif`
 - `reports/videos/*.mp4`
 
-## Sample Videos
+## Sample Visualizations
 
-Generated demo videos are available under `reports/videos/`:
+Generated demo animations are available under `reports/gifs/` and link to the original MP4 files in `reports/videos/`.
 
-- [Tri-planar walkthrough](reports/videos/test_005_tri_planar.mp4)
-- [Hotspot zoom](reports/videos/test_005_hotspot_zoom.mp4)
-- [Axial panel sweep](reports/videos/test_005_axial_panel.mp4)
-- [MIP rotation](reports/videos/test_005_mip_rotation.mp4)
+[![Tri-planar walkthrough](reports/gifs/test_005_tri_planar.gif)](reports/videos/test_005_tri_planar.mp4)
+
+[![Hotspot zoom](reports/gifs/test_005_hotspot_zoom.gif)](reports/videos/test_005_hotspot_zoom.mp4)
+
+[![Axial panel sweep](reports/gifs/test_005_axial_panel.gif)](reports/videos/test_005_axial_panel.mp4)
+
+[![MIP rotation](reports/gifs/test_005_mip_rotation.gif)](reports/videos/test_005_mip_rotation.mp4)
 
 Notes:
-- In GitHub README rendering, direct public `.mp4` URLs can show an inline player.
-- Relative repository paths like the links above are the safest portable form, but some viewers will open them as files instead of embedding them inline.
+- GIFs render inline in GitHub README.
+- Clicking any GIF opens the original `.mp4` file.
 
 The output directories above are local run artifacts. For research review or portfolio presentation, the primary source tree is `src/`, `configs/`, and the pipeline entry points at the repository root.
 # pet-nonac-to-ac
