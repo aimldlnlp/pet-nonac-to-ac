@@ -1,0 +1,59 @@
+seed: 2026
+
+data:
+  root: data
+  shape: [64, 64, 64]
+  train_cases: 40
+  val_cases: 8
+  test_cases: 8
+
+train:
+  batch_size: 2
+  epochs: 20
+  lr: 0.0002
+  weight_decay: 0.00001
+  num_workers: 2
+  amp: true
+  grad_clip: 1.0
+  early_stop_patience: 6
+  early_stop_min_delta: 0.0001
+
+scheduler:
+  enabled: true
+  factor: 0.5
+  patience: 3
+  min_lr: 0.000001
+
+loss:
+  w_l1: 0.52
+  w_grad: 0.10
+  w_hi: 0.10
+  w_topk: 0.10
+  w_rel: 0.10
+  w_log: 0.10
+  w_peak: 0.10
+  hi_threshold: 0.93
+  hi_boost: 1.2
+  roi_quantile: 0.99
+  roi_min_voxels: 256
+  peak_voxels: 64
+  topk_frac: 0.005
+  topk_min_voxels: 256
+  rel_eps: 0.001
+  log_alpha: 20.0
+
+eval:
+  suv_roi_quantile: 0.99
+  suv_roi_min_voxels: 256
+  suv_peak_voxels: 64
+
+model:
+  in_channels: 1
+  out_channels: 1
+  base_channels: 16
+
+paths:
+  checkpoint_dir: checkpoints
+  calibration_path: checkpoints/calibration.json
+  output_pred_dir: outputs/predictions
+  report_dir: reports
